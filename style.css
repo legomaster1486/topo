@@ -1,0 +1,36 @@
+#land {
+    margin: 0.2rem;
+}
+
+#landenLijst {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+#landenKeuze {
+    width: 200px;
+    
+}
+
+#vragen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+#typeQuiz {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}

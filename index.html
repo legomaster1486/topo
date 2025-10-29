@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topografie</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="typeQuiz">
+        <h3>Type Quiz</h3>
+        <label for="type0"><input type="radio" name="type" id="type0" checked>Open vraag</label>
+        <label for="type1"><input type="radio" name="type" id="type1">Meerkeuze</label>
+    </div>
+    <div id="vragen">
+        <h2 id="vraag">Quiz</h2>
+        <div id="vraagContainer">
+            <button type="submit" id="start">Druk hier om te starten</button>
+        </div>
+        
+        
+    </div>
+    <div id="landenKeuze">
+        <h3>Landen</h3>
+        <label><input type="checkbox" name="alle" id="select-all">Selecteer alles</label>
+        <div id="landenLijst">
+            <!-- Lijst van landen wordt hier gegenereerd door script.js -->
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
