@@ -12,6 +12,7 @@
 
 #landenKeuze {
     width: 200px;
+    height: 100%;
     
 }
 
@@ -31,6 +32,12 @@ body {
 
 #typeQuiz {
     width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#filters {
     display: flex;
     flex-direction: column;
 }
