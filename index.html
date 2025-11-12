@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topografie</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div id="typeQuiz">
         <h3>Type Quiz</h3>
@@ -17,16 +19,181 @@
         <div id="vraagContainer">
             <button type="submit" id="start">Druk hier om te starten</button>
         </div>
-        
-        
+
+
     </div>
     <div id="landenKeuze">
-        <h3>Landen</h3>
-        <label><input type="checkbox" name="alle" id="select-all">Selecteer alles</label>
+        <div id="filters">
+            <h3>Landen</h3>
+            <label><input type="checkbox" name="alle" id="select-all">Selecteer alles</label>
+            <label><input type="checkbox" name="europa" id="select-europe">Enkel Europa</label>
+        </div>
         <div id="landenLijst">
-            <!-- Lijst van landen wordt hier gegenereerd door script.js -->
+            <label>
+                <input type="checkbox" id="land" name="Canada">Canada</label>
+            <label>
+                <input type="checkbox" id="land" name="Verenigde Staten">Verenigde Staten</label>
+            <label>
+                <input type="checkbox" id="land" name="Mexico">Mexico</label>
+            <label>
+                <input type="checkbox" id="land" name="Brazilië">Brazilië</label>
+            <label>
+                <input type="checkbox" id="land" name="Argentinië">Argentinië</label>
+            <label>
+                <input type="checkbox" id="land" name="Marokko">Marokko</label>
+            <label>
+                <input type="checkbox" id="land" name="Egypte">Egypte</label>
+            <label>
+                <input type="checkbox" id="land" name="D.R. Congo">D.R. Congo</label>
+            <label>
+                <input type="checkbox" id="land" name="Zuid-Afrika">Zuid-Afrika</label>
+            <label>
+                <input type="checkbox" id="land" name="Rusland" class="europe">Rusland</label>
+            <label>
+                <input type="checkbox" id="land" name="Turkije" class="europe">Turkije</label>
+            <label>
+                <input type="checkbox" id="land" name="Iran">Iran</label>
+            <label>
+                <input type="checkbox" id="land" name="India">India</label>
+            <label>
+                <input type="checkbox" id="land" name="China">China</label>
+            <label>
+                <input type="checkbox" id="land" name="Japan">Japan</label>
+            <label>
+                <input type="checkbox" id="land" name="Thailand">Thailand</label>
+            <label>
+                <input type="checkbox" id="land" name="Indonesië">Indonesië</label>
+            <label>
+                <input type="checkbox" id="land" name="Australië">Australië</label>
+            <label>
+                <input type="checkbox" id="land" name="Nieuw-Zeeland">Nieuw-Zeeland</label>
+            <label>
+                <input type="checkbox" id="land" name="Colombia">Colombia</label>
+            <label>
+                <input type="checkbox" id="land" name="Venezuela">Venezuela</label>
+            <label>
+                <input type="checkbox" id="land" name="Gyuana">Gyuana</label>
+            <label>
+                <input type="checkbox" id="land" name="Suriname">Suriname</label>
+            <label>
+                <input type="checkbox" id="land" name="Frans-Guyana">Frans-Guyana</label>
+            <label>
+                <input type="checkbox" id="land" name="Peru">Peru</label>
+            <label>
+                <input type="checkbox" id="land" name="Bolivia">Bolivia</label>
+            <label>
+                <input type="checkbox" id="land" name="Chili">Chili</label>
+            <label>
+                <input type="checkbox" id="land" name="Groenland">Groenland</label>
+            <label>
+                <input type="checkbox" id="land" name="Mali">Mali</label>
+            <label>
+                <input type="checkbox" id="land" name="Nigeria">Nigeria</label>
+            <label>
+                <input type="checkbox" id="land" name="Ethiopië">Ethiopië</label>
+            <label>
+                <input type="checkbox" id="land" name="Somalië">Somalië</label>
+            <label>
+                <input type="checkbox" id="land" name="Palestina">Palestina</label>
+            <label>
+                <input type="checkbox" id="land" name="Israël">Israël</label>
+            <label>
+                <input type="checkbox" id="land" name="Saoedi-Arabië">Saoedi-Arabië</label>
+            <label>
+                <input type="checkbox" id="land" name="Qatar">Qatar</label>
+            <label>
+                <input type="checkbox" id="land" name="Irak">Irak</label>
+            <label>
+                <input type="checkbox" id="land" name="Afghanistan">Afghanistan</label>
+            <label>
+                <input type="checkbox" id="land" name="Pakistan">Pakistan</label>
+            <label>
+                <input type="checkbox" id="land" name="Bangladesh">Bangladesh</label>
+            <label>
+                <input type="checkbox" id="land" name="Noord-Korea">Noord-Korea</label>
+            <label>
+                <input type="checkbox" id="land" name="Zuid-Korea">Zuid-Korea</label>
+            <label>
+                <input type="checkbox" id="land" name="IJsland" class="europe">IJsland</label>
+            <label>
+                <input type="checkbox" id="land" name="Noorwegen" class="europe">Noorwegen</label>
+            <label>
+                <input type="checkbox" id="land" name="Zweden" class="europe">Zweden</label>
+            <label>
+                <input type="checkbox" id="land" name="Finland" class="europe">Finland</label>
+            <label>
+                <input type="checkbox" id="land" name="Denemarken" class="europe">Denemarken</label>
+            <label>
+                <input type="checkbox" id="land" name="België" class="europe">België</label>
+            <label>
+                <input type="checkbox" id="land" name="G.H. Luxemburg" class="europe">G.H. Luxemburg</label>
+            <label>
+                <input type="checkbox" id="land" name="Nederland" class="europe">Nederland</label>
+            <label>
+                <input type="checkbox" id="land" name="Verenigd Koningrijk" class="europe">Verenigd Koningrijk</label>
+            <label>
+                <input type="checkbox" id="land" name="Ierland" class="europe">Ierland</label>
+            <label>
+                <input type="checkbox" id="land" name="Frankrijk" class="europe">Frankrijk</label>
+            <label>
+                <input type="checkbox" id="land" name="Zwitserland" class="europe">Zwitserland</label>
+            <label>
+                <input type="checkbox" id="land" name="Duitsland" class="europe">Duitsland</label>
+            <label>
+                <input type="checkbox" id="land" name="Oostenrijk" class="europe">Oostenrijk</label>
+            <label>
+                <input type="checkbox" id="land" name="Polen" class="europe">Polen</label>
+            <label>
+                <input type="checkbox" id="land" name="Tsjechië" class="europe">Tsjechië</label>
+            <label>
+                <input type="checkbox" id="land" name="Slowakije" class="europe">Slowakije</label>
+            <label>
+                <input type="checkbox" id="land" name="Hongarije" class="europe">Hongarije</label>
+            <label>
+                <input type="checkbox" id="land" name="Kroatië" class="europe">Kroatië</label>
+            <label>
+                <input type="checkbox" id="land" name="Slovenië" class="europe">Slovenië</label>
+            <label>
+                <input type="checkbox" id="land" name="Estland" class="europe">Estland</label>
+            <label>
+                <input type="checkbox" id="land" name="Letland" class="europe">Letland</label>
+            <label>
+                <input type="checkbox" id="land" name="Litouwen" class="europe">Litouwen</label>
+            <label>
+                <input type="checkbox" id="land" name="Wit-Rusland" class="europe">Wit-Rusland</label>
+            <label>
+                <input type="checkbox" id="land" name="Oekraïne" class="europe">Oekraïne</label>
+            <label>
+                <input type="checkbox" id="land" name="Roemenië" class="europe">Roemenië</label>
+            <label>
+                <input type="checkbox" id="land" name="Moldavië" class="europe">Moldavië</label>
+            <label>
+                <input type="checkbox" id="land" name="Bulgarije" class="europe">Bulgarije</label>
+            <label>
+                <input type="checkbox" id="land" name="Portugal" class="europe">Portugal</label>
+            <label>
+                <input type="checkbox" id="land" name="Spanje" class="europe">Spanje</label>
+            <label>
+                <input type="checkbox" id="land" name="Italië" class="europe">Italië</label>
+            <label>
+                <input type="checkbox" id="land" name="Bosnië-Herzegovina" class="europe">Bosnië-Herzegovina</label>
+            <label>
+                <input type="checkbox" id="land" name="Noord-Macedonië" class="europe">Noord-Macedonië</label>
+            <label>
+                <input type="checkbox" id="land" name="Servië" class="europe">Servië</label>
+            <label>
+                <input type="checkbox" id="land" name="Montenegro" class="europe">Montenegro</label>
+            <label>
+                <input type="checkbox" id="land" name="Albanië" class="europe">Albanië</label>
+            <label>
+                <input type="checkbox" id="land" name="Griekenland" class="europe">Griekenland</label>
+            <label>
+                <input type="checkbox" id="land" name="Cyprus" class="europe">Cyprus</label>
+            <label>
+                <input type="checkbox" id="land" name="Malta" class="europe">Malta</label>
         </div>
     </div>
 </body>
 <script src="./script.js"></script>
+
 </html>
