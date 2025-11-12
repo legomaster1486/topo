@@ -84,12 +84,27 @@ const landen = {
     "Malta": "Valletta",
     "Turkije": "Ankara",
 }
-for (i in landen) {
-    landenLijst.innerHTML += `<label><input type="checkbox" id="land" name="${i}">${i}</label>`;
-}
+
 
 document.querySelector("#start").addEventListener("click", startQuiz)
 const vraagElement = document.getElementById('vraagContainer');
+
+
+const alle = document.querySelector('#select-all');
+const enkelEuropa = document.querySelector('#select-europe');
+
+const checkboxes = document.querySelectorAll('input[type="checkbox"][id="land"]');
+const europaLanden = document.querySelectorAll('input[type="checkbox"][class="europe"]');
+
+enkelEuropa.addEventListener('change', function() {
+    europaLanden.forEach(cb => cb.checked = enkelEuropa.checked);
+});
+
+alle.addEventListener('change', function() {
+    checkboxes.forEach(cb => cb.checked = alle.checked);
+});
+
+
 
 
 function vraag(geselecteerdeLanden) {
