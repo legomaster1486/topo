@@ -109,9 +109,10 @@ alle.addEventListener('change', function() {
 
 function vraag(geselecteerdeLanden) {
     const i = Math.floor(Math.random() * geselecteerdeLanden.length);
+    vraagElement.style.color = "black";
     vraagElement.innerHTML = `<div class="vraag">Wat is de hoofdstad van ${geselecteerdeLanden[i]}?
-    <input type="text" id="antwoord-${i}">
-    <button onclick="controleerAntwoord('${geselecteerdeLanden[i]}', ${i})">Controleer</button>
+    <input type="text" id="antwoord-${i}" class="antwoord">
+    <button class="controle" onclick="controleerAntwoord('${geselecteerdeLanden[i]}', ${i})">Controleer</button>
     </div>`;
     geselecteerdeLanden.pop(i);
 }
@@ -119,17 +120,22 @@ function vraag(geselecteerdeLanden) {
 
 function startQuiz() {
     const geselecteerdeLanden = Array.from(document.querySelectorAll('input[id="land"]:checked')).map(cb => cb.name);
+    if (geselecteerdeLanden.length === 0) {
+        alert("Selecteer minstens één land om te beginnen met de quiz.");
+    } else {
+
     vraag(geselecteerdeLanden);
+}
 }
 
 
 function controleerAntwoord(land, index) {
     const antwoordInput = document.getElementById(`antwoord-${index}`);
     if (antwoordInput.value === landen[land]) {
-        vraagElement.innerHTML = `Correct! De hoofdstad van ${land} is inderdaad ${landen[land]}.`;
+        vraagElement.innerHTML = `Correct! De hoofdstad van ${land} is inderdaad ${landen[land]}.<button id="next" onclick="startQuiz()">Volgende vraag</button>`;
         vraagElement.style.color = "green";
     } else {
-        vraagElement.innerHTML = `Fout! Het juiste antwoord is ${landen[land]}.`;
+        vraagElement.innerHTML = `Fout! Het juiste antwoord is ${landen[land]}.<button id="next" onclick="startQuiz()">Volgende vraag</button>`;
         vraagElement.style.color = "red";
     }
 }

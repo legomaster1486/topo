@@ -26,6 +26,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
     
 }
 
@@ -40,4 +42,24 @@ body {
 #filters {
     display: flex;
     flex-direction: column;
+    height: 13.5vh;
+}
+
+.vraag {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.antwoord {
+    margin: 5px;
+}
+
+.controle {
+    margin: 5px;
+}
+
+#landenLijst {
+    overflow-y: scroll;
+    height: 86.5vh;
 }
