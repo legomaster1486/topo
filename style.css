@@ -63,3 +63,8 @@ body {
     overflow-y: scroll;
     height: 86.5vh;
 }
+
+#landenTitel {
+    margin-bottom: auto;
+    margin-top: auto;
+}
