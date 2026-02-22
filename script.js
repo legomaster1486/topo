@@ -39,7 +39,7 @@ const landen = {
     "Irak": "Bagdad",
     "Afghanistan": "Kabul",
     "Pakistan": "Islamabad",
-    "Bangladesh": "Daka",
+    "Bangladesh": "Dhaka",
     "Noord-Korea": "Pyongyang",
     "Zuid-Korea": "Seoul",
     "IJsland": "Reykjavik",
@@ -139,5 +139,6 @@ function controleerAntwoord(land, index) {
         vraagElement.style.color = "red";
     }
 }
+
 
 
